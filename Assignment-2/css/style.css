@@ -1,0 +1,192 @@
+/* Applying box model to all elements */
+* {
+    box-sizing: border-box;
+}
+/* Default body margins and padding and applying fonts to texts */
+body {
+    margin: 0;
+    padding: 0;
+    font-family:cursive;
+    background-image: url(../img/pizza2.jpg);
+}
+/* Header Styles */
+header {
+    background-color:#f17b1b ;
+    height: 125px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:cursive;
+  }
+/* Height width to logo */
+  header > img {
+    width: auto;
+    height: 100%;
+  }
+/* Container styles to main content */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Pizza Section backgroung */
+.pizza-section {
+    background-color: #f1f1f1a8;
+}
+/* Heading Style */
+h2 {
+    text-align: center;
+}
+/* Pizza option section */
+.pizza-options {
+    display: grid;
+    gap: 10px;
+}
+/* Style for Pizza size */
+.size label {
+    font-weight: bold;
+}
+/* style fot pizza variety */
+.varieties label {
+    font-weight: bold;
+}
+/* Order button styles  */
+#order-btn {
+    background-color: #f17b1b91;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+/* order.html styles */
+.order{
+    background-image: url(../img/pizza2.jpg);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Styles when order button is hovered */
+#order-btn:hover {
+    background-color: #f17b1b;
+    font-family: cursive;
+}
+/* footer styles  */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+/* order.html body styles  */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/* header styles */
+header {
+    padding: 0px;
+}
+/* navigation styles  */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* styles for image  */
+body header nav img{
+    height: 110px;
+    width: 110px;
+}
+/* Pizza section background styles */
+.pizza {
+    background-image: url('../img/pizza\ 2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* pizza-content styles */
+.pizza-content {
+    text-align: center;
+    color: #111010;
+    font-family:cursive;
+}
+/* heading styles  */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background-color: #3429ce00;
+    color: rgb(252, 249, 249);
+    font-family:cursive;
+}
+/* background colour for the text  */
+.text{
+    background-color: #f17b1b91;
+}
+/* paragraph tag styles  */
+p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    background-color: #f17b1b91;
+}
+/* button styles  */
+.btn {
+    background-color: #f17b1b91;
+    color: #faf8f8;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in-out;
+}
+/* styles for button when hovered  */
+.btn:hover {
+    background-color: #f17b1b;
+    font-family: cursive;
+}
+/* footer styles  */
+footer {
+    background-color: #333;
+    color: #ffffff00;
+    padding: 10px;
+    text-align: center;
+}
+/* styles in payment section  */
+.payment-section {
+    background-color: #f1f1f1a8;
+    padding: 20px;
+    margin-top: 20px;
+}
+/* styles for payment options  */
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+/* font style in payment options  */
+.payment-options label {
+    font-weight: bold;
+}
+/* padding and width to payment method  */
+#payment-method {
+    padding: 8px;
+    width: 100%;
+}
+/* style to display topping  */
+.toppings-display {
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* total price styles */
+.total-price {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}

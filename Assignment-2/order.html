@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="this week we are working with semantic elements">
+    <meta name = "robots" content="noindex, nofollow">
+    <!-- title of second Page -->
+    <title>Oeder Page</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- Java script added for functionality -->
+    <script src="./js/a2.js"></script>
+
+</head>
+
+<body class="order">
+    <header>
+        <!-- Main title or Page -->
+        <h1>Buzz Off Pizza</h1>
+    </header> 
+    <!-- Pizza section  -->
+    <section class="pizza-section">
+        <div class="container">
+            <div class="pizza-options">
+                <div class="option">
+                    <!-- Selecting size of pizza -->
+                    <label for="size"><b>Size:</b></label>
+                    <select id="size">
+                        <option value="small">Small (4 Slices)</option>
+                        <option value="medium">Medium (6 Slices)</option>
+                        <option value="large">Large (8 Slices)</option>
+                        <option value="X-Large">X-Large (12 Slices)</option>
+                    </select>
+                </div>
+                <!-- Selecting Base of pizza -->
+                <div class="varieties">
+                    <label for="crust">Dough:</label>
+                    <select id="crust">
+                        <option value="regular">Regular Crust (140 Cals)</option>
+                        <option value="thin crust">Thin Crust (100 Cals)</option>
+                        <option value="thick crust">Thick Crust (180 Cals)</option>
+                    </select>
+                </div>
+                <!-- Selecting sauce of pizza  -->
+                <div class="varieties">
+                    <label>Base Sauces :</label>
+                    <input type="radio" id="No-Sauce" name="sauce" value="No"> No Sauce
+                    <input type="radio" id="BuffaloSauce" name="sauce" value="Buffalo"> Buffalo Base Sauce
+                    <input type="radio" id="ButterChickenSauce" name="sauce" value="Butter Chicken"> Butter Chicken Sauce
+                    <input type="radio" id="PestoSauce" name="sauce" value="Pesto"> Pesto Sauce
+                    <input type="radio" id="TexasBbq" name="sauce" value="Texas Bbq"> Texas Bbq
+                </div>
+                <!-- Selecting cheese of pizza  -->
+                <div class="varieties">
+                    <label>Base Cheese :</label>
+                    <input type="checkbox" id="NoCheese" value="No cheese" > No Cheese
+                    <input type="checkbox" id="dairyfreecheese" value="Dairy free cheese"> Dairy Free Cheese
+                    <input type="checkbox" id="sixcheese" value="Six cheese"> Six Cheese Base
+                    <input type="checkbox" id="Mozzarella" value="Mozzarella"> Mozzarella Cheese
+                    <input type="checkbox" id="fat" value="Low fat"> Low Fat Cheese
+                </div>
+                <!-- Selecting cheese level of pizza -->
+                <div class="varieties">
+                    <label>Cheese Level :</label>
+                    <input type="radio" name="Normal" value="Normal"> Normal
+                    <input type="radio" name="Extra" value="Extra"> Extra
+                    <input type="radio" name="Double" value="Double"> Double
+                    <input type="radio" name="Triple" value="Triple"> Triple
+                </div>
+                <!-- Selecting Non-vegetarian topping on pizza -->
+                <div class="varieties">
+                    <label>Toppings Meat :</label>
+                    <input type="checkbox" id="Bacon" value="Bacon Crumble"> Bacon Crumble
+                    <input type="checkbox" id="butterchicken" value="Butter Chicken"> Butter Chicken
+                    <input type="checkbox" id="groundbeef" value="Ground Beef"> Ground Beef
+                    <input type="checkbox" id="Italianham" value="Italian Ham"> Italian Ham
+                    <input type="checkbox" id="Pepperoni" value="pepperoni"> Pepperoni
+                    <input type="checkbox" id="SpicyItalian" value="Spicy Italian"> Spicy Italian Sausage
+                    <input type="checkbox" id="Salami" value="Salami"> Salami
+
+                </div>
+                <!-- Vegetarian toppings for pizza  -->
+                <div class="varieties">
+                    <label>Toppings Vegetarian :</label>
+                    <input type="checkbox" id="redpepper" value="Fire roasted"> Fire roasted red pepper
+                    <input type="checkbox" id="greenpepper" value="Green Pepper"> Green Pepper
+                    <input type="checkbox" id="bananapepper" value="Hot Banana Pepper"> Hot Banana Pepper
+                    <input type="checkbox" id="jalapenopepper" value="Jalapeno pepper"> Jalapeno pepper
+                    <input type="checkbox" id="greenOlives" value="Green Olives"> Green Olives
+                    <input type="checkbox" id="redOnions" value="Red Onions"> Red Onions
+                    <input type="checkbox" id="Tomatoes" value="Tomatoes"> Tomatoes
+                    <input type="checkbox" id="Spinach" value="Spinach"> Spinach
+                    <input type="checkbox" id="Garlic" value="Roasted Garlic"> Roasted Garlic
+
+                </div>
+                <!-- Option given to customer fior delievery or takeAway -->
+                <div class="varieties">
+                    <label for="delivery">Delivery:</label>
+                    <input type="radio" name="delivery" id="delivery" value="deliverOrder">
+                    <label for="delivery">Take Away:</label>
+                    <input type="radio" name="delivery" id="takeAway" value="takeAway">
+                </div>
+                <!-- Confirm order button  -->
+                <button id="order-btn">Confirm Order</button>
+            </div>
+        </div>
+    </section>
+    <!-- Payment section -->
+    <section class="payment-section">
+        <div class="container">
+            <!-- Heading for payment section -->
+            <h2>Payment</h2>
+            <div class="payment-options">
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method">
+                    <option value="Cash-On-Delivery">Cash-On-Delivery</option>
+                    <option value="Neo card">Neo Card</option>
+                    <option value="G-Pay">G-Pay</option>
+                    <option value="credit/Debit card">Credit / Debit Card</option>
+                </select>
+                <!-- Display selected toppings -->
+                <label>Selected Toppings:</label>
+                <div id="toppings-display"></div>
+                <!-- Input field for displaying total Price  -->
+                <label for="total-price">Total Price:</label>
+                <input type="text" id="total-price" readonly>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+</body>
+
+</html>
+
+
